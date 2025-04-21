@@ -1,0 +1,106 @@
+export default function Portfolio() {
+    return (
+      <div className="font-sans bg-gradient-to-b from-white to-gray-50 text-gray-900 min-h-screen">
+        <header className="bg-white border-b border-gray-200 shadow-sm p-6">
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div className="flex-1">
+              <h1 className="text-4xl font-extrabold text-indigo-700">Harshit Pathak</h1>
+              <p className="text-xl text-gray-600 mt-1">BBA Student | Digital Business & Entrepreneurship | IIM Bangalore</p>
+            </div>
+            <div className="w-24 h-24 sm:w-28 sm:h-28">
+              <img
+                src="/passport photo.jpg"
+                alt="Harshit Pathak"
+                className="w-full h-full object-cover rounded-full border-4 border-indigo-200 shadow-md float-right"
+              />
+            </div>
+          </div>
+        </header>
+  
+        <main className="px-6 py-10 max-w-6xl mx-auto space-y-16">
+          <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <h2 className="text-3xl font-semibold text-indigo-600 mb-4">About Me</h2>
+            <p className="text-lg leading-relaxed">
+              As a passionate BBA student majoring in Digital Business and Entrepreneurship at IIM Bangalore, I aim to
+              leverage my academic knowledge, innovative mindset, and hands-on project experience to contribute to
+              dynamic business environments. My goal is to support and grow within forward-thinking companies or
+              startups by applying digital tools, marketing strategies, and entrepreneurial insights to drive business
+              growth, user engagement, and digital transformation.
+            </p>
+          </motion.section>
+  
+          <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
+            <h2 className="text-3xl font-semibold text-indigo-600 mb-4">Academic Qualifications</h2>
+            <div className="overflow-x-auto rounded-lg shadow">
+              <table className="min-w-full border border-gray-200 text-left">
+                <thead className="bg-indigo-100 text-indigo-800">
+                  <tr>
+                    <th className="p-3">S.No.</th>
+                    <th className="p-3">Qualification</th>
+                    <th className="p-3">University / Board</th>
+                    <th className="p-3">Year</th>
+                    <th className="p-3">Percentage</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  <tr className="border-t">
+                    <td className="p-3">1</td>
+                    <td className="p-3">10th Class</td>
+                    <td className="p-3">CBSE</td>
+                    <td className="p-3">2022</td>
+                    <td className="p-3">82.8%</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">2</td>
+                    <td className="p-3">12th Class</td>
+                    <td className="p-3">CBSE</td>
+                    <td className="p-3">2024</td>
+                    <td className="p-3">83.4%</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">3</td>
+                    <td className="p-3">BBA in Digital Business and Entrepreneurship</td>
+                    <td className="p-3">IIM Bangalore</td>
+                    <td className="p-3">2024–2027</td>
+                    <td className="p-3">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </motion.section>
+  
+          <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
+            <h2 className="text-3xl font-semibold text-indigo-600 mb-4">Certifications</h2>
+            <ul className="list-disc list-inside space-y-2 text-lg">
+              <li>NCC A Certificate</li>
+              <li>94.4 percentile in National Interactive Maths Olympiad</li>
+              <li>Participant in International Mathematics Olympiad</li>
+              <li>Badminton & Football player at Lakshmibai National Institute of Physical Education</li>
+              <li>Rock Climbing at Gwalior Fort</li>
+            </ul>
+          </motion.section>
+  
+          <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}>
+            <h2 className="text-3xl font-semibold text-indigo-600 mb-4">Interests</h2>
+            <ul className="flex flex-wrap gap-4 text-lg">
+              <li className="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full">Video Editing</li>
+              <li className="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full">UX Design</li>
+              <li className="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full">Startups & Venture Capital</li>
+            </ul>
+          </motion.section>
+  
+          <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}>
+            <h2 className="text-3xl font-semibold text-indigo-600 mb-4">Contact</h2>
+            <div className="text-lg space-y-1">
+              <p>Address: 25/2260 Bhagwati Niwas, River View Colony, Morar, Gwalior - 474006</p>
+              <p>Phone: <a href="tel:7000109512" className="text-indigo-600 underline">7000109512</a></p>
+              <p>Email: <a href="mailto:harshitpathakme@gmail.com" className="text-indigo-600 underline">harshitpathakme@gmail.com</a></p>
+            </div>
+          </motion.section>
+        </main>
+  
+        <footer className="text-center p-6 text-sm text-gray-500 border-t mt-12">
+          © {new Date().getFullYear()} Harshit Pathak. All rights reserved.
+        </footer>
+      </div>
+      <link rel="stylesheet" href="harshit1.CSS" />

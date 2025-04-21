@@ -1,0 +1,141 @@
+/* === GLOBAL RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f9f9fc;
+    color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* === CONTAINER === */
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* === HEADER === */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  header .info h1 {
+    font-size: 2.5rem;
+    color: #4f46e5;
+  }
+  
+  header .info p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4f46e5;
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.2);
+  }
+  
+  /* === SECTION TITLES === */
+  .section-title {
+    font-size: 1.5rem;
+    color: #4f46e5;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #eef2ff;
+    color: #4f46e5;
+  }
+  
+  /* === LISTS === */
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* === SKILLS GRID === */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skill-item {
+    background: #eef2ff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #4f46e5;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-3px);
+    background-color: #e0e7ff;
+  }
+  
+  /* === CONTACT === */
+  .contact p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact a {
+    color: #4f46e5;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === FOOTER === */
+  footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid #eee;
+  }
